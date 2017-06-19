@@ -1,4 +1,6 @@
+@import '../app.scss';
+
 h2{
-	color: purple;
+	color: $base-color;
 	background-color: black;
 }
