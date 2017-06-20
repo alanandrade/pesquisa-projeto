@@ -4,4 +4,9 @@ header{
 	background-color: $base-header;
 	width: 100%;
 	color: $text-color;
+	display: table;
+	.logo{
+		width: 70px;
+		margin: 0 auto;
+	}
 }
