@@ -8,6 +8,7 @@ import { Step0Component } from './step-0/step-0.component';
 import { Step1Component } from './step-1/step-1.component';
 import { Step2Component } from './step-2/step-2.component';
 import { Step3Component } from './step-3/step-3.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { Step3Component } from './step-3/step-3.component';
     Step0Component,
     Step1Component,
     Step2Component,
-    Step3Component
+    Step3Component,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

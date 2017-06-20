@@ -14,6 +14,16 @@ gulp.task('global', function(){
 	.pipe(gulp.dest('src/app'))
 });
 
+//HEADER
+gulp.task('header', function(){
+	return gulp.src('src/app/header/header.scss')
+	.pipe (sass())
+	.pipe(cleanCSS({compatibility: 'ie8'}))
+	.pipe(autoprefixer())
+	.pipe(concat('header.component.css'))
+	.pipe(gulp.dest('src/app/header'))
+});
+
 //STEP-0
 gulp.task('step0', function(){
 	return gulp.src('src/app/step-0/step-0.scss')
@@ -54,8 +64,9 @@ gulp.task('step3', function(){
 	.pipe(gulp.dest('src/app/step-3'))
 });
 
-gulp.task('watch', ['global', 'step0', 'step1', 'step2', 'step3'], function(){
+gulp.task('watch', ['header', 'global', 'step0', 'step1', 'step2', 'step3'], function(){
 	gulp.watch('src/app/*.scss', ['global']);
+	gulp.watch('src/app/**/*.scss', ['header']);
 	gulp.watch('src/app/**/*.scss', ['step0']);
 	gulp.watch('src/app/**/*.scss', ['step1']);
 	gulp.watch('src/app/**/*.scss', ['step2']);

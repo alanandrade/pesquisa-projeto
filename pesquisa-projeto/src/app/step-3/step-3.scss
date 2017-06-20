@@ -1,3 +1,5 @@
-h2{
-	color: red;
+@import '../app.scss';
+
+.step3{
+	background-color: $base-step3;
 }

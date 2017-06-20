@@ -1,8 +1,21 @@
-/*------- Cores globais bases -------*/
-$base-color: purple;
+/*=========== UTILITIES =============*/
+$base-header:	#000000;
+$base-step0: 	#193441;
+$base-step1: 	#e74c3c;
+$base-step2:	#2980b9;
+$base-step3:	#3f1833;
+$text-color:	#ffffff;
 
-/*------- Padrao Global -------*/
+/*=========== ATOMS =============*/
 
-img{
-	max-width: 100%;
+
+/*=========== MOLECULES =============*/
+.step{
+	width: 100%;
+	height: 100%;
+	color: $text-color;
 }
+
+/*=========== ORGANISMS =============*/
+
+/*=========== PAGES =============*/

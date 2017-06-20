@@ -1,4 +1,5 @@
-h2{
-	color: black;
-	background-color: tomato;
+@import '../app.scss';
+
+.step1{
+	background-color: $base-step1;
 }
