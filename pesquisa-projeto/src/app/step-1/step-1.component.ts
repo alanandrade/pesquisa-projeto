@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { StepsService } from '../steps.service';
+
 @Component({
   selector: 'app-step-1',
   templateUrl: './step-1.component.html',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Step1Component implements OnInit {
 
-  constructor() { }
+	contador: number = 0;
 
+  constructor(public service: StepsService){ }
+  
   ngOnInit() {
   }
 
+  avancarStep() {
+  	this.service.avancarStep();
+    this.contador ++;
+  }
 }

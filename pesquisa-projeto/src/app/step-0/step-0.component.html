@@ -1,3 +1,5 @@
-<section class="step step0">
-	<h2>Step-0</h2>
+<section class="step step0" *ngIf="contador == 0">
+	<h2>Step-0 {{contador}}</h2>
+
+	<button (click)="avancarStep()">Avançar</button>
 </section>

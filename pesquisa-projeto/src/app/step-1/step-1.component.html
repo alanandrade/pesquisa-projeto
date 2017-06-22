@@ -1,3 +1,4 @@
-<section class="step step1">
-	<h2>Step-1</h2>	
+<section class="step step1" *ngIf="contador == 1">
+	<h2>Step-1</h2>
+	<button (click)="avancarStep()">Avançar</button>
 </section>

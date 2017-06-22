@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { StepsService } from './steps.service';
 import { AppComponent } from './app.component';
 import { Step0Component } from './step-0/step-0.component';
 import { Step1Component } from './step-1/step-1.component';
@@ -24,7 +25,7 @@ import { HeaderComponent } from './header/header.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [StepsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
