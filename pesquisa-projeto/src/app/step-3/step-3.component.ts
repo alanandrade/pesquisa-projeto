@@ -9,8 +9,6 @@ import { StepsService } from '../steps.service';
 })
 export class Step3Component implements OnInit {
 	
-  	contador: number = 3;
-
   	constructor(public service: StepsService){ }
 
   	ngOnInit() {

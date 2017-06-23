@@ -9,15 +9,10 @@ import { StepsService } from '../steps.service';
 })
 export class Step1Component implements OnInit {
 
-	contador: number = 0;
+	step1: boolean = false;
 
-  constructor(public service: StepsService){ }
+	constructor(public service: StepsService){ }
   
-  ngOnInit() {
-  }
-
-  avancarStep() {
-  	this.service.avancarStep();
-    this.contador ++;
-  }
+	ngOnInit() {
+	}
 }

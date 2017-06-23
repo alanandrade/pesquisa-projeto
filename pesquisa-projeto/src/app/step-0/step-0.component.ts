@@ -9,16 +9,19 @@ import { StepsService } from '../steps.service';
 })
 export class Step0Component implements OnInit {
 	
-  contador: number = 0;
+  step0: boolean = true;
 
-  constructor(public service: StepsService){ }
+  constructor(public service: StepsService){
+  }
   
   ngOnInit() {
   }
 
-  //Function do botao de ação de mostrar Alert, declarada dentro de sua class AppComponent
-  avancarStep() {
-  	this.service.avancarStep();
-    this.contador ++;
+  avancarStep1(): void {
+    this.service.proxStep1();
+  }
+
+  enviarMsg(): void {
+    this.service.msgAlerta();
   }
 }
