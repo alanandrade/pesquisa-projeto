@@ -15,9 +15,12 @@ export class AppComponent {
   avancarStep1(): void {
   	this.service.proxStep1();
   }
-  
-  enviarMsg(): void {
-  	this.service.msgAlerta();
+
+  avancarStep2(): void {
+    this.service.proxStep2();
   }
 
+  avancarStep3(): void {
+    this.service.proxStep3();
+  }
 }

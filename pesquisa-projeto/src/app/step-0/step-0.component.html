@@ -2,5 +2,22 @@
 	<h2>Step-0 {{step0}}</h2>
 
 	<button (click)="avancarStep1()">Avançar</button>
-	<button (click)="enviarMsg()">Enviar Alerta</button>
+</section>
+
+<section class="step step1" *ngIf="step1 == true">
+	<h2>Step-1 {{step1}}</h2>
+
+	<button (click)="avancarStep2()">Avançar</button>
+</section>
+
+<section class="step step2" *ngIf="step2 == true">
+	<h2>Step-2 {{step2}}</h2>
+
+	<button (click)="avancarStep3()">Avançar</button>
+</section>
+
+<section class="step step3" *ngIf="step3 == true">
+	<h2>Step-3 {{step3}}</h2>
+
+	<button>Concluir</button>
 </section>

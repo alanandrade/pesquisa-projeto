@@ -10,6 +10,14 @@ import { StepsService } from '../steps.service';
 export class Step0Component implements OnInit {
 	
   step0: boolean = true;
+  step1: boolean = false;
+  step2: boolean = false;
+  step3: boolean = false;
+
+  prox0: boolean = false;
+  prox1: boolean = true;
+  prox2: boolean = true;
+  prox3: boolean = true;
 
   constructor(public service: StepsService){
   }
@@ -18,10 +26,18 @@ export class Step0Component implements OnInit {
   }
 
   avancarStep1(): void {
-    this.service.proxStep1();
+    this.step1 = this.prox1; //Ativa proximo Step
+    this.step0 = false; //Desativa Step Atual
   }
 
-  enviarMsg(): void {
-    this.service.msgAlerta();
+   avancarStep2(): void {
+    this.step2 = this.prox2; //Ativa proximo Step
+    this.step1 = false; //Desativa Step Atual
   }
+
+  avancarStep3(): void {
+    this.step3 = this.prox3; //Ativa proximo Step
+    this.step2 = false; //Desativa Step Atual
+  }
+  
 }

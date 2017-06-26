@@ -3,19 +3,27 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class StepsService {
 
-	teste: string = 'texto de exemplo';
 	step0: boolean;
 	step1: boolean;
+	step2: boolean;
+	step3: boolean;
+
+  prox0: boolean = false;
+  prox1: boolean = true;
+  prox2: boolean = true;
+  prox3: boolean = true;
 
   	constructor() { }
 
-  proxStep1(): void {
-    this.step0 = false;
-    alert(this.step0);
-    console.log("status step 0 - " + this.step0);
+  proxStep1(): any {
+    console.log(this.step1);
   }
 
-  msgAlerta(): void {
-  	alert('Livro Angular 2 - Google - ' + this.teste);
+  proxStep2(): any {
+    console.log(this.step1);
+  }
+
+  proxStep3(): any {
+    console.log(this.step1);
   }
 }
