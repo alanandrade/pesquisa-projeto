@@ -12,15 +12,5 @@ export class AppComponent {
 
   constructor(public service: StepsService){ }
 
-  avancarStep1(): void {
-  	this.service.proxStep1();
-  }
 
-  avancarStep2(): void {
-    this.service.proxStep2();
-  }
-
-  avancarStep3(): void {
-    this.service.proxStep3();
-  }
 }
