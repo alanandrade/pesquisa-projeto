@@ -7,51 +7,87 @@
 
 .step1{
 	background-color: $base-step1;
+	margin-top: -20px;
 }
 
 .step2{
 	background-color: $base-step2;
+	margin-top: -20px;
 }
 
 .step3{
 	background-color: $base-step3;
+	margin-top: -20px;
 }
 
 /*=========== ATOMS =============*/
 
 .pergunta{
 	background-color: $base-question;
-	width: 90%;
+	width: 75%;
 	margin: 20px auto;
 	text-align: center;
 	border-radius: 5px;
-	padding: 10px;
+	padding: 20px;
+	position: relative;
+    top: 20px;
+    @media screen and (min-width: 992px){
+    	top: 0px;
+    }
 }
 
 .card{
 	background-color: $base-card;
 	width: 100%;
-	min-height: 150px;
+	min-height: 180px;
 	margin: 10px auto;
 	border-radius: 5px;
 	border-bottom: 10px solid tomato;
+	cursor: pointer;
+	text-align: center;
+	&:hover, &:active{
+		background-color: $bg-gelo;
+		transition-duration: 1s;
+	}
+
+	h2{
+		background-color: $bg-gelo;
+    	height: 60px;
+    	padding-top: 20px;
+    	border-radius: 5px;
+	}
+
+	p{
+		margin-top: 15px;
+		color: $txt-secondary;
+	}
+
 	@media screen and (min-width: 992px){
 		width: 25%;
     	float: left;
     	margin-left: 6%;
+    	min-height: 220px;
 	}
 }
 
 .btn-action{
 	clear: both;
 	text-align: center;
-	margin-bottom: 30px;
+	padding-bottom: 30px;
 	button{
 		border: none;
 		width:80%;
 		font-size: 1.3em;
 		padding: 10px;
 		border-radius: 5px;
+		font-weight: bold;
+		cursor: pointer;
+		background-color: $base-btn;
+		&:hover, &:active{
+			background-color: $bg-btn-ativo;
+			color: $text-btn-ativo;
+			transition-duration: 0.3s; 
+		}
 	}
 }
 

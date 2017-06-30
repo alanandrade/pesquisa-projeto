@@ -1,20 +1,23 @@
 <section class="step step0" *ngIf="step0 == true">
 	<section class="content">
 		<div class="pergunta">
-			<h2>Perguta</h2>
+			<h3>Qual o nivel de diculdade na alimentação saudável?</h3>
 		</div>
 
 		<section class="cards clearfix">
 			<div class="card">
-				<h3>Alternativas</h3>
+				<h2>Simples</h2>
+				<p>Tenho fácil controle</p>
 			</div>
 
 			<div class="card">
-				<h3>Alternativas</h3>
+				<h2>Intermediário</h2>
+				<p>Tento Controlar, com certa dificuldade</p>
 			</div>
 
 			<div class="card">
-				<h3>Alternativas</h3>
+				<h2>Tenho Dificuldades</h2>
+				<p>Não tenho muito controle</p>
 			</div>
 		</section>
 
@@ -25,19 +28,88 @@
 </section>
 
 <section class="step step1" *ngIf="step1 == true">
-	<h2>Step-1 {{step1}}</h2>
+	<section class="content">
+		<div class="pergunta">
+			<h3>Qual dificuldade ao se comprar alimentos no mercado?</h3>
+		</div>
 
-	<button (click)="avancarStep2()">Avançar</button>
+		<section class="cards clearfix">
+			<div class="card">
+				<h2>Rótulos</h2>
+				<p>Rótulos e Tabela Nutricional</p>
+			</div>
+
+			<div class="card">
+				<h2>Falta de Opção</h2>
+				<p>Não possui diversidade nos produtos saudáveis</p>
+			</div>
+
+			<div class="card">
+				<h2>Não tenho dificuldade</h2>
+				<p>N/D</p>
+			</div>
+		</section>
+
+		<section class="btn-action">
+			<button (click)="avancarStep2()">Avançar</button>
+		</section>
+	</section>
 </section>
 
 <section class="step step2" *ngIf="step2 == true">
-	<h2>Step-2 {{step2}}</h2>
+	<section class="content">
+		<div class="pergunta">
+			<h3>Qual o nivel de diculdade na alimentação saudável?</h3>
+		</div>
 
-	<button (click)="avancarStep3()">Avançar</button>
+		<section class="cards clearfix">
+			<div class="card">
+				<h2>Simples</h2>
+				<p>Tenho fácil controle</p>
+			</div>
+
+			<div class="card">
+				<h2>Intermediário</h2>
+				<p>Tento Controlar, com certa dificuldade</p>
+			</div>
+
+			<div class="card">
+				<h2>Tenho Dificuldades</h2>
+				<p>Não tenho muito controle</p>
+			</div>
+		</section>
+
+		<section class="btn-action">
+			<button (click)="avancarStep3()">Avançar</button>
+		</section>
+	</section>
 </section>
 
 <section class="step step3" *ngIf="step3 == true">
-	<h2>Step-3 {{step3}}</h2>
+	<section class="content">
+		<div class="pergunta">
+			<h3>Qual o nivel de diculdade na alimentação saudável?</h3>
+		</div>
 
-	<button>Concluir</button>
+		<section class="cards clearfix">
+			<div class="card">
+				<h2>Simples</h2>
+				<p>Tenho fácil controle</p>
+			</div>
+
+			<div class="card">
+				<h2>Intermediário</h2>
+				<p>Tento Controlar, com certa dificuldade</p>
+			</div>
+
+			<div class="card">
+				<h2>Tenho Dificuldades</h2>
+				<p>Não tenho muito controle</p>
+			</div>
+		</section>
+
+		<section class="btn-action">
+			<button (click)="avancarStep1()">Avançar</button>
+		</section>
+	</section>
 </section>
