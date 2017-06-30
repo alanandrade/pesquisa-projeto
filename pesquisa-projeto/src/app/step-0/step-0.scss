@@ -2,6 +2,7 @@
 
 .step0{
 	background-color: $base-step0;
+	margin-top: -20px;
 }
 
 .step1{
@@ -15,3 +16,45 @@
 .step3{
 	background-color: $base-step3;
 }
+
+/*=========== ATOMS =============*/
+
+.pergunta{
+	background-color: $base-question;
+	width: 90%;
+	margin: 20px auto;
+	text-align: center;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.card{
+	background-color: $base-card;
+	width: 100%;
+	min-height: 150px;
+	margin: 10px auto;
+	border-radius: 5px;
+	border-bottom: 10px solid tomato;
+	@media screen and (min-width: 992px){
+		width: 25%;
+    	float: left;
+    	margin-left: 6%;
+	}
+}
+
+.btn-action{
+	clear: both;
+	text-align: center;
+	margin-bottom: 30px;
+	button{
+		border: none;
+		width:80%;
+		font-size: 1.3em;
+		padding: 10px;
+		border-radius: 5px;
+	}
+}
+
+/*=========== MOLECULES =============*/
+
+/*=========== PAGES =============*/

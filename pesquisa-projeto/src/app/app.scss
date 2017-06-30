@@ -1,21 +1,57 @@
 /*=========== UTILITIES =============*/
-$base-header:	#000000;
-$base-step0: 	#193441;
-$base-step1: 	#e74c3c;
-$base-step2:	#2980b9;
-$base-step3:	#3f1833;
-$text-color:	#ffffff;
+$base-header:		#000000;
+$base-step0: 		#2c3e50;
+$base-step1: 		#e74c3c;
+$base-step2:		#2980b9;
+$base-step3:		#3f1833;
 
-/*=========== ATOMS =============*/
-
-
-/*=========== MOLECULES =============*/
-.step{
-	width: 100%;
-	height: 100%;
-	color: $text-color;
-}
+$text-color:		#000;
+$text-base:			#333333;
+$base-card:			#ffffff;
+$base-question:		#ffffff;
 
 /*=========== ORGANISMS =============*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
 
-/*=========== PAGES =============*/
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+img{
+	max-width: 100%;
+}
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content{
+	@media screen and (min-width: 992px){
+		position: relative;
+		top: 5%;
+	}
+}
+
+.step{
+	position: relative;
+	width: 100%;
+	height: auto;
+	color: $text-base;
+	@media screen and (min-width: 768px){
+		height: 100%;	
+	}
+}
+
+.cards{
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	margin-top: 70px;
+}

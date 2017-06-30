@@ -1,7 +1,27 @@
 <section class="step step0" *ngIf="step0 == true">
-	<h2>Step-0 {{step0}}</h2>
+	<section class="content">
+		<div class="pergunta">
+			<h2>Perguta</h2>
+		</div>
 
-	<button (click)="avancarStep1()">Avançar</button>
+		<section class="cards clearfix">
+			<div class="card">
+				<h3>Alternativas</h3>
+			</div>
+
+			<div class="card">
+				<h3>Alternativas</h3>
+			</div>
+
+			<div class="card">
+				<h3>Alternativas</h3>
+			</div>
+		</section>
+
+		<section class="btn-action">
+			<button (click)="avancarStep1()">Avançar</button>
+		</section>
+	</section>
 </section>
 
 <section class="step step1" *ngIf="step1 == true">
