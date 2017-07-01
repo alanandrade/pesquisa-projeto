@@ -45,9 +45,9 @@
 	border-bottom: 10px solid tomato;
 	cursor: pointer;
 	text-align: center;
-	&:hover, &:active{
+	&:hover{
 		background-color: $bg-gelo;
-		transition-duration: 1s;
+		transition-duration: 0.5s;
 	}
 
 	h2{
