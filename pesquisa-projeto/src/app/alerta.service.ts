@@ -3,10 +3,14 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class AlertaService {
 
-  constructor() { }
+	valorClassBinding: boolean = false;
+	alerta: boolean = false;
 
-  msgAlerta(): void{
-    alert("Suas respostas foram enviadas com sucesso");
-  }
+  	constructor() { }
+
+  	msgAlerta(): void{
+    	this.valorClassBinding = true;
+    	this.alerta = true;
+  	}
 
 }

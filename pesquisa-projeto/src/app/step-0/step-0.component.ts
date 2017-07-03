@@ -15,6 +15,8 @@ export class Step0Component implements OnInit {
   step3: boolean = false;
 
   proximo: boolean = true;
+  valorClassBinding: boolean = false;
+  alerta: boolean = false;
 
   constructor(private service: AlertaService){
   }
@@ -39,5 +41,14 @@ export class Step0Component implements OnInit {
 
    enviarMsg(): void {
     this.service.msgAlerta();
+    this.valorClassBinding = true;
+    this.alerta = true;
+  }
+
+  voltar(): void{
+    this.valorClassBinding = false;
+    this.alerta = false;
+    this.step3 = false;
+    this.step0 = true;
   }
 }

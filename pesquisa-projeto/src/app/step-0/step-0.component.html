@@ -113,3 +113,15 @@
 		</section>
 	</section>
 </section>
+
+<section class="step step3" *ngIf="step3 == true" [class.without-focus]="valorClassBinding">
+	<div class="alerta" *ngIf="alerta == true">
+		<i class="fa fa-check" aria-hidden="true"></i>
+		<h1>Concluído</h1>
+		<p>Suas respostas foram enviadas com sucesso</p>
+
+		<section class="btn-action">
+			<button class="back" (click)="voltar()">Voltar</button>
+		</section>
+	</div>
+</section>
