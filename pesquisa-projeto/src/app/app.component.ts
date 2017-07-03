@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { StepsService } from './steps.service';
+import { AlertaService } from './alerta.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,9 @@ import { StepsService } from './steps.service';
 export class AppComponent {
   title = 'app works!';
 
-  constructor(public service: StepsService){ }
+  constructor(private service: AlertaService){ }
 
-
+  enviarMsg(): void {
+  	this.service.msgAlerta();
+  }
 }

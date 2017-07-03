@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { Step0Component } from './step-0/step-0.component';
 import { HeaderComponent } from './header/header.component';
 
-import { StepsService } from './steps.service';
+import { AlertaService } from './alerta.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { StepsService } from './steps.service';
     FormsModule,
     HttpModule
   ],
-  providers: [StepsService],
+  providers: [AlertaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { StepsService } from '../steps.service';
+import { AlertaService } from '../alerta.service';
 
 @Component({
   selector: 'app-step-0',
@@ -16,7 +16,7 @@ export class Step0Component implements OnInit {
 
   proximo: boolean = true;
 
-  constructor(public service: StepsService){
+  constructor(private service: AlertaService){
   }
   
   ngOnInit() {
@@ -36,5 +36,8 @@ export class Step0Component implements OnInit {
     this.step3 = this.proximo; //Ativa proximo Step
     this.step2 = false; //Desativa Step Atual
   }
-  
+
+   enviarMsg(): void {
+    this.service.msgAlerta();
+  }
 }
